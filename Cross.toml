@@ -4,5 +4,5 @@ passthrough = []
 [target.aarch64-unknown-linux-musl]
 pre-build = [
     "dpkg --add-architecture arm64",
-    "apt-get update && apt-get install --yes libssl-dev:arm64 pkg-config:arm64"
+    "DEBIAN_FRONTEND=noninteractive apt-get update && apt-get install --yes libssl-dev:arm64 pkg-config:arm64"
 ]
