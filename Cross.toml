@@ -1,0 +1,11 @@
+[target.aarch64-unknown-linux-musl]
+pre-build = ["sudo apt install libssl-dev"]
+
+[target.armv7-unknown-linux-musleabihf]
+pre-build = ["sudo apt install libssl-dev"]
+
+[target.i686-unknown-linux-musl]
+pre-build = ["sudo apt install libssl-dev"]
+
+[target.x86_64-unknown-linux-musl]
+pre-build = ["sudo apt install libssl-dev"]
