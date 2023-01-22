@@ -5,5 +5,5 @@ passthrough = []
 pre-build = [
     "dpkg --add-architecture arm64",
     "ln -snf /usr/share/zoneinfo/$(curl https://ipapi.co/timezone) /etc/localtime",
-    "apt-get update && apt-get install --yes libssl-dev:arm64 pkg-config"
+    "apt-get update && apt-get install --yes libssl-dev:arm64 libssl-dev pkg-config"
 ]
